@@ -12,7 +12,7 @@ def nyc_pigeon_organizer(data)
         end
         
         if !new_hash[name][attr].include?(identity)
-          new_hash[name][attr].map(identity.to_s)
+          new_hash[name][attr] << identity.to_s
         end
       end
     end
